@@ -8,3 +8,14 @@
 /home/gabriel/Documents/meusProjetos/mentoria/obj/Debug/netcoreapp2.0/mentoria.AssemblyInfo.cs
 /home/gabriel/Documents/meusProjetos/mentoria/obj/Debug/netcoreapp2.0/mentoria.dll
 /home/gabriel/Documents/meusProjetos/mentoria/obj/Debug/netcoreapp2.0/mentoria.pdb
+/home/daniel.gomes/projects/mentoria-gabriel/Mentoria/obj/Debug/netcoreapp2.0/mentoria.csprojAssemblyReference.cache
+/home/daniel.gomes/projects/mentoria-gabriel/Mentoria/obj/Debug/netcoreapp2.0/mentoria.csproj.CoreCompileInputs.cache
+/home/daniel.gomes/projects/mentoria-gabriel/Mentoria/obj/Debug/netcoreapp2.0/mentoria.AssemblyInfoInputs.cache
+/home/daniel.gomes/projects/mentoria-gabriel/Mentoria/obj/Debug/netcoreapp2.0/mentoria.AssemblyInfo.cs
+/home/daniel.gomes/projects/mentoria-gabriel/Mentoria/obj/Debug/netcoreapp2.0/mentoria.dll
+/home/daniel.gomes/projects/mentoria-gabriel/Mentoria/obj/Debug/netcoreapp2.0/mentoria.pdb
+/home/daniel.gomes/projects/mentoria-gabriel/mentoria/bin/Debug/netcoreapp2.0/mentoria.deps.json
+/home/daniel.gomes/projects/mentoria-gabriel/mentoria/bin/Debug/netcoreapp2.0/mentoria.runtimeconfig.json
+/home/daniel.gomes/projects/mentoria-gabriel/mentoria/bin/Debug/netcoreapp2.0/mentoria.runtimeconfig.dev.json
+/home/daniel.gomes/projects/mentoria-gabriel/mentoria/bin/Debug/netcoreapp2.0/mentoria.dll
+/home/daniel.gomes/projects/mentoria-gabriel/mentoria/bin/Debug/netcoreapp2.0/mentoria.pdb

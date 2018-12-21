@@ -1,4 +1,5 @@
 ﻿using System;
+using mentoria.NewImplementation;
 
 namespace mentoria
 {
@@ -7,44 +8,51 @@ namespace mentoria
     static void Main(string[] args)
     {
 
-      Console.WriteLine("Digite seu salário abaixo para cálculo");
-      var valorDigitado = Convert.ToDecimal(Console.ReadLine());
+      // Console.WriteLine("Digite seu salário abaixo para cálculo");
+      // var valorDigitado = Convert.ToDecimal(Console.ReadLine());
 
-      var meuSalario = new Salario(valorDigitado);
-      Console.WriteLine($"O seu salário líquido é ${meuSalario.SalarioLiquido.ToString()}");
+      // var meuSalario = new Salario(valorDigitado);
+      // Console.WriteLine($"O seu salário líquido é ${meuSalario.SalarioLiquido.ToString()}");
 
       // Quebrar código em classes com  Responsabilidade unica
       // Se entrar um imposto novo (ex icms) e (xpto)
       // OCP respeitar
 
-      // var salario = 2000M;
-      // var cestaBeneficio = 100M;
 
-      // var inss = salario * 0.08M;
+      var meuSalario = new Salario(2000M)
+                            // .Desconta(new Inss())
+                            .Desconta(new Irf())
+                            // .Desconta(new CestaDeBeneficio(Nivel.Senior))
+                            .SalarioAtual;
+      Console.WriteLine($"Meu salário é top: {meuSalario}");
+    //   var salario = 2000M;
+    //   var cestaBeneficio = 100M;
 
-      // if(salario >= 1690 && salario < 2800)
-      //     inss = salario * 0.09M;
-      // else if (salario >= 2801 )
-      //     inss = salario * 0.11M;
+    //   var inss = salario * 0.08M;
 
-
-      // var salarioAposInss = salario - inss;
-
-      // var irf = 0M;
-
-      // if( salarioAposInss >= 1900 && salarioAposInss < 2800)
-      //     irf = salarioAposInss * 0.075M - 142M;
-      // else if(salarioAposInss >= 2801 && salarioAposInss < 3700)
-      //     irf = salarioAposInss * 0.15M - 354M;
-      // else if (salarioAposInss >= 3701 && salarioAposInss < 4600)
-      //     irf = salarioAposInss * 0.225M - 636M;
-      // else if( salarioAposInss > 4600)
-      //     irf = salarioAposInss * 0.27M - 869;
+    //   if(salario >= 1690 && salario < 2800)
+    //       inss = salario * 0.09M;
+    //   else if (salario >= 2801 )
+    //       inss = salario * 0.11M;
 
 
-      // var salarioFinal = salario - inss - irf - cestaBeneficio;
+    //   var salarioAposInss = salario - inss;
 
-      //Console.WriteLine($"O meu salário final é {salarioFinal}");
+    //   var irf = 0M;
+
+    //   if( salarioAposInss >= 1900 && salarioAposInss < 2800)
+    //       irf = salarioAposInss * 0.075M - 142M;
+    //   else if(salarioAposInss >= 2801 && salarioAposInss < 3700)
+    //       irf = salarioAposInss * 0.15M - 354M;
+    //   else if (salarioAposInss >= 3701 && salarioAposInss < 4600)
+    //       irf = salarioAposInss * 0.225M - 636M;
+    //   else if( salarioAposInss > 4600)
+    //       irf = salarioAposInss * 0.27M - 869;
+
+
+    //   var salarioFinal = salario - inss - irf - cestaBeneficio;
+
+    //   Console.WriteLine($"O meu salário final é {salarioFinal}");
     }
   }
 }
