@@ -4,27 +4,15 @@ namespace mentoria
 {
   public class Salario
   {
-    public Salario(decimal valor)
+    public Salario(decimal valorDoSalario)
     {
-      SalarioBruto = valor;
-      CalcularSalarioliquido();
+      SalarioAtual = valorDoSalario;
     }
-
-    private decimal _salarioLiquido;
-    public decimal SalarioLiquido
+    public decimal SalarioAtual { get; private set; }
+    public Salario Desconta(IImposto desconto)
     {
-      get
-      {
-        return Math.Round(_salarioLiquido,2);
-      }
-      protected set {}
-    }
-    private decimal SalarioBruto { get; set; }
-    private void CalcularSalarioliquido()
-    {
-      _salarioLiquido = SalarioBruto;
-      _salarioLiquido -= new Inss(SalarioLiquido).Calcular(SalarioLiquido);
-      _salarioLiquido -= new ImpostoDeRenda(SalarioLiquido).Calcular(SalarioLiquido);
+      SalarioAtual -= desconto.Calcula(SalarioAtual);
+      return this;
     }
   }
 }

@@ -3,44 +3,15 @@ using static mentoria.FaixaSalarialEnum;
 
 namespace mentoria
 {
-  public class ImpostoDeRenda : Imposto
+  public class ImpostoDeRenda : IImposto
   {
-    public ImpostoDeRenda(decimal salario)
+    public decimal Calcula(decimal valor)
     {
-      FaixaSalarial = RetornaFaixaSalarial(salario);
-      ValorImpostoDeRenda = Calcular(salario);
-    }
-    private decimal ValorImpostoDeRenda { get; set; }
-    private FaixaIr FaixaSalarial { get; set; }
-    public override decimal Calcular(decimal valor)
-    {
-      switch (FaixaSalarial)
-      {
-        case FaixaIr.Um:
-          ValorImpostoDeRenda = 0;
-          break;
-        case FaixaIr.Dois:
-          ValorImpostoDeRenda = valor * (7.5M / 100) - 142.80M;
-          break;
-        case FaixaIr.Tres:
-          ValorImpostoDeRenda = valor * (15M / 100) - 354.80M;
-          break;
-        case FaixaIr.Quatro:
-          ValorImpostoDeRenda = valor * (22.5M / 100) - 636.13M;
-          break;
-        case FaixaIr.Cinco:
-          ValorImpostoDeRenda = valor * (27.5M / 100) - 869.36M;
-          break;
-      }
-      return ValorImpostoDeRenda;
-    }
-    private FaixaIr RetornaFaixaSalarial(decimal salario)
-    {
-      if (salario <= 1903.98M) return FaixaIr.Um;
-      else if (salario > 1903.98M && salario <= 2826.65M) return FaixaIr.Dois;
-      else if (salario > 2826.65M && salario <= 3751.05M) return FaixaIr.Tres;
-      else if (salario > 3751.05M && salario <= 4664.68M) return FaixaIr.Quatro;
-      else return FaixaIr.Cinco;
+      if (valor <= 1903.98M) return 0;
+      else if (valor > 1903.98M && valor <= 2826.65M) return valor * 0.075M + 142.80M;
+      else if (valor > 2826.65M && valor <= 3751.05M) return valor * 0.15M + 335.03M;
+      else if (valor > 3751.05M && valor <= 4664.68M) return valor * 0.225M + 602.96M;
+      return valor * 0.275M + 826.15M;
     }
   }
 }

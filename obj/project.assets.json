@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/gabriel/Documents/meusProjetos/mentoria/mentoria.csproj",
+      "projectUniqueName": "/home/gabriel/Documents/projetos/mentoria/mentoria.csproj",
       "projectName": "mentoria",
-      "projectPath": "/home/gabriel/Documents/meusProjetos/mentoria/mentoria.csproj",
+      "projectPath": "/home/gabriel/Documents/projetos/mentoria/mentoria.csproj",
       "packagesPath": "/home/gabriel/.nuget/packages/",
-      "outputPath": "/home/gabriel/Documents/meusProjetos/mentoria/obj/",
+      "outputPath": "/home/gabriel/Documents/projetos/mentoria/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

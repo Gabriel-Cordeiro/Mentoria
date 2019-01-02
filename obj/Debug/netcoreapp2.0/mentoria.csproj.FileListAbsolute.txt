@@ -8,3 +8,13 @@
 /home/gabriel/Documents/meusProjetos/mentoria/obj/Debug/netcoreapp2.0/mentoria.AssemblyInfo.cs
 /home/gabriel/Documents/meusProjetos/mentoria/obj/Debug/netcoreapp2.0/mentoria.dll
 /home/gabriel/Documents/meusProjetos/mentoria/obj/Debug/netcoreapp2.0/mentoria.pdb
+/home/gabriel/Documents/projetos/mentoria/bin/Debug/netcoreapp2.0/mentoria.deps.json
+/home/gabriel/Documents/projetos/mentoria/bin/Debug/netcoreapp2.0/mentoria.runtimeconfig.json
+/home/gabriel/Documents/projetos/mentoria/bin/Debug/netcoreapp2.0/mentoria.runtimeconfig.dev.json
+/home/gabriel/Documents/projetos/mentoria/bin/Debug/netcoreapp2.0/mentoria.dll
+/home/gabriel/Documents/projetos/mentoria/bin/Debug/netcoreapp2.0/mentoria.pdb
+/home/gabriel/Documents/projetos/mentoria/obj/Debug/netcoreapp2.0/mentoria.csproj.CoreCompileInputs.cache
+/home/gabriel/Documents/projetos/mentoria/obj/Debug/netcoreapp2.0/mentoria.AssemblyInfoInputs.cache
+/home/gabriel/Documents/projetos/mentoria/obj/Debug/netcoreapp2.0/mentoria.AssemblyInfo.cs
+/home/gabriel/Documents/projetos/mentoria/obj/Debug/netcoreapp2.0/mentoria.dll
+/home/gabriel/Documents/projetos/mentoria/obj/Debug/netcoreapp2.0/mentoria.pdb
