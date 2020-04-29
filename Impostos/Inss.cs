@@ -1,7 +1,6 @@
 using System;
-using static mentoria.FaixaSalarialEnum;
 
-namespace mentoria
+namespace mentoria.Impostos
 {
   public class Inss : IImposto
   {
